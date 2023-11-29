@@ -4,4 +4,9 @@ export function getLista() {
     return lista;
 }
 
+export function limparLista(){
+    lista.splice(0,3);
+}
+
+export function adicionarNaLista
 // export {getLista};
