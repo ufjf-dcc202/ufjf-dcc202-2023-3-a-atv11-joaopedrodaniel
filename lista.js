@@ -1,10 +1,10 @@
 const lista = ["Um", "Dois", "Três"];
 
 export function getLista() {
-    return lista;
+    return structuredClone(lista);
 }
 
-export function limparLista(){
+export function limpaLista(){
     lista.splice(0);
 }
 
