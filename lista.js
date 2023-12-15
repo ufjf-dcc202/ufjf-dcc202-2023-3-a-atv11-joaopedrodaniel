@@ -8,7 +8,12 @@ export function limpaLista(){
     lista.splice(0);
 }
 
-export function adicionarNaLista(novoItem){
+export function adicionaNaLista(novoItem){
     lista.push(novoItem);
 }
-// export {getLista};
+
+export function removeDaLista(index) {
+    if (index >= 0 && index < lista.length) {
+        lista.splice(index, 1);
+    }
+}
